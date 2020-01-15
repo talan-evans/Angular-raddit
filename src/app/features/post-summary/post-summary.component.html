@@ -1,0 +1,12 @@
+<div class="wrapper">
+    <div class="post-title">
+        {{ post.title }}
+    </div>
+    <div class="post-body">
+
+        {{ post.body | shortVersion }}
+    </div>
+    <div class="post-date">
+        {{ post.createdTime | date:'short'}}
+    </div>
+</div>

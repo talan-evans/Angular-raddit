@@ -1,0 +1,5 @@
+  <div class="content">
+      <div class="container card" *ngFor="let p of posts | async">
+          <app-post-summary [post]="p"></app-post-summary>
+      </div>
+  </div>
