@@ -8,13 +8,18 @@ import { CommentComponent } from './comment/comment.component';
 import { PostSummaryComponent } from './post-summary/post-summary.component';
 import { SharedModule } from '../shared/shared.module';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { CreatePostComponent } from './create-post/create-post.component';
 
 
 @NgModule({
-  declarations: [LoginComponent, MainComponent, SubradditComponent, PostComponent, CommentComponent, PostSummaryComponent],
+  declarations: [LoginComponent, MainComponent, SubradditComponent, PostComponent, CommentComponent, PostSummaryComponent, CreatePostComponent],
   imports: [
     CommonModule,
     RouterModule,
+    FormsModule,
+    HttpClientModule,
     SharedModule
   ],
   exports: [

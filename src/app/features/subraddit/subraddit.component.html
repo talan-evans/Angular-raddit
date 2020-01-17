@@ -1,5 +1,13 @@
-<div class="content">
+<div *ngIf="(posts | async).length > 0; else noContent" class="content">
+
     <div class="container card" *ngFor="let p of posts | async">
         <app-post-summary [post]="p"></app-post-summary>
     </div>
 </div>
+
+<ng-template #noContent>
+    <div class="container card">
+        Yo, dawg. Nothin' to see here.
+    </div>
+    
+</ng-template>

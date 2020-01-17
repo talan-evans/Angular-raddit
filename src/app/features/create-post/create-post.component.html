@@ -1,0 +1,13 @@
+<div class="wrapper m-3">
+    <div class="container card p-3">
+        <h3>Create New Post</h3>
+        <label>Subraddit:</label>
+        <input type="text" id="subraddit" name="subraddit" [(ngModel)]="subraddit"><br />
+        <label>Title:</label>
+        <input type="text" id="title" name="title" [(ngModel)]="title"><br />
+        <label>Body:</label>
+        <input type="text" id="body" name="body" [(ngModel)]="body"><br />
+        <hr />
+        <button class="btn btn-primary" (click)="create()">Create New Post</button>
+    </div>
+</div>

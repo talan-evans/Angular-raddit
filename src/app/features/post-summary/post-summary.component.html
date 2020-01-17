@@ -7,6 +7,22 @@
         {{ post.body | shortVersion }}
     </div>
     <div class="post-date">
+
         {{ post.createdTime | date:'short'}}
+    </div>
+    <div class="post-author">
+
+        <h6>Created by: {{ post.author }}</h6>
+    </div>
+    <div class="interaction">
+        <div class="post-like">
+            <i class="fas fa-thumbs-up" [ngClass]="{'red': post.interaction > 0}" (click)="likePost()"></i>
+        </div>
+        <div class="post-count" [ngClass]="{'red': count() > 0, 'blue': count() < 0}" >
+            {{ count() }}
+        </div>
+        <div class="post-dislike">
+            <i class="fas fa-thumbs-down" [ngClass]="{'blue': post.interaction < 0}" (click)="dislikePost()"></i>
+        </div>
     </div>
 </div>

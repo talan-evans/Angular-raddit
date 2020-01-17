@@ -3,7 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  LOGIN_URL: 'http://api-test.new-labs.co:8080/raddit/login',
+  SIGNUP_URL: 'http://api-test.new-labs.co:8080/raddit/signup',
+  CREATE_POST_URL: 'http://api-test.new-labs.co:8080/raddit/post',
+  ALL_SUBRADDIT_URL: 'http://api-test.new-labs.co:8080/raddit/post/all',
+  SUBRADDIT_URL: 'http://api-test.new-labs.co:8080/raddit/post/subraddit/',
+  POST_BY_ID_URL: 'http://api-test.new-labs.co:8080/raddit/post/',
+  LIKE_POST_URL: 'http://api-test.new-labs.co:8080/raddit/post/addlike/',
+  DISLIKE_POST_URL: 'http://api-test.new-labs.co:8080/raddit/post/unlike/'
 };
 
 /*

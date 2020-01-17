@@ -1,1 +1,11 @@
-<p>login works!</p>
+<div class="wrapper">
+    <div class="container card p-3">
+        <h3>Raddit</h3>
+        <label>Email:</label>
+        <input type="text" id="email" name="email" [(ngModel)]="email"><br />
+        <label>Password</label>
+        <input type="password" id="password" name="password" [(ngModel)]="password"><br />
+        <hr />
+        <button class="btn btn-primary" (click)="login()">Login</button>
+    </div>
+</div>

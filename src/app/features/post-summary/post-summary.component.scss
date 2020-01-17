@@ -11,3 +11,21 @@
 .post-body {
     padding: 10px;
 }
+
+.interaction {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.fas:hover {
+    cursor: pointer;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}

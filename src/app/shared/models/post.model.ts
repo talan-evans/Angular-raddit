@@ -5,10 +5,10 @@ export interface Post {
     subraddit: string,
     title: string,
     body: string,
+    author: string,
     likes: number,
     dislikes: number,
-    createdBy: string,
-    createdTime: Date,
+    createTimestamp: Date,
     interaction: number,
     comments: Comment[]
 }

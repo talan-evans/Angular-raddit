@@ -11,8 +11,8 @@ export const POSTS: Post[] =  [
         likes:  0,
         dislikes:  0,
         interaction: 0,
-        createdBy: 'test@test.com',
-        createdTime: new Date(),
+        author: 'test@test.com',
+        createTimestamp: new Date(),
         comments: []
     },
     {
@@ -23,8 +23,8 @@ export const POSTS: Post[] =  [
         likes:  0,
         dislikes:  0,
         interaction: 0,
-        createdBy: 'test@test.com',
-        createdTime: new Date(),
+        author: 'test@test.com',
+        createTimestamp: new Date(),
         comments: []
     }
 ]
